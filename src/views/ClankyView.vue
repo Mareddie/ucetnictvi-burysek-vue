@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Tlacitko from '../components/Tlacitko.vue'
+import Window_kontakt from '@/components/Window_kontakt.vue';
 </script>
 
 <template>
@@ -141,6 +142,8 @@ import Tlacitko from '../components/Tlacitko.vue'
             </div>
         </section>
     </main>
+
+    <!-- <Window_kontakt></Window_kontakt> -->
 </template>
 
 <style>

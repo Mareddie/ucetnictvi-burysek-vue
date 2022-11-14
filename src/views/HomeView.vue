@@ -14,5 +14,5 @@ import Window_kontakt from '../components/Window_kontakt.vue'
     <Tlacitko></Tlacitko>
   </main>
 
-  <Window_kontakt></Window_kontakt>
+  <!-- <Window_kontakt></Window_kontakt> -->
 </template>
