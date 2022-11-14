@@ -1,6 +1,6 @@
 /* obrázek na pozadí v jumbotronu */
 #vedeni-ucetnictvi {
-  background-image: url("./assets/images/matous-burysek-ucetnictvi-Brno.jpeg");
+  background-image: url("/src/assets/images/matous-burysek-ucetnictvi-Brno.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

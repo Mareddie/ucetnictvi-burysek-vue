@@ -1,7 +1,11 @@
+<script setup lang="ts">
+import Tlacitko from '../components/Tlacitko.vue'
+</script>
+
 <template>
     <main>
 
-        <!-- 1. ROW: AKTUÁLNÍ ČLÁNEK -->
+        <!-- AKTUÁLNÍ ČLÁNEK -->
 
         <section id="clanek" class="row py-3 px-3 px-md-5">
             <h1>Název článku</h1>
@@ -64,17 +68,9 @@
             </div>
         </section>
 
-        <!-- 2. ROW: TLAČÍTKO -->
+        <Tlacitko></Tlacitko>
 
-        <section id="poptavka" class="row bg-light py-5">
-            <div class="d-grid gap-2 col-8 col-md-5 mx-auto">
-                <button class="btn btn-primary btn-lg text-uppercase fw-bold" onclick="openContactBox()">
-                    <h3 class="pt-2">Nezávazně poptat účetní služby</h3>
-                </button>
-            </div>
-        </section>
-
-        <!-- 3. ROW: DALŠÍ ČLÁNKY -->
+        <!-- DALŠÍ ČLÁNKY -->
 
         <section id="dalsi-clanky" class="row bg-primary p-3 p-md-5">
 
