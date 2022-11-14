@@ -14,10 +14,11 @@ const router = createRouter({
     {
       path: '/clanky',
       name: 'clanky',
+      component: ClankyView
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/ClankyView.vue')
+      //component: () => import('../views/ClankyView.vue')
     },
     {
       path: '/kontakt',
