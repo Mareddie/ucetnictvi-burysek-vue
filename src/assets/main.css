@@ -1,35 +1,126 @@
-/* @import "./base.css";
+/* obrázek na pozadí v jumbotronu */
+#vedeni-ucetnictvi {
+  background-image: url("./assets/images/matous-burysek-ucetnictvi-Brno.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* pozadí textu v jumbotronu */
+#vedeni-ucetnictvi p {
+  /* text-shadow: 1px 1px white, -1px 1px white, 1px -1px white, -1px -1px white, 0 0 10px white, 0 0 5px white; */
+  text-shadow: 0 0 10px white, 0 0 5px white, 0 0 1px white;
+}
 
+.text-secondary {
+  font-style: italic;
+}
+
+.nav-item {
+  font-size: large;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Signika Negative', sans-serif;
+}
+
+h5 {
   font-weight: normal;
 }
 
-a,
-.green {
+/* modré zbýraznění některých slov */
+
+.word-background {
+  margin: 0px auto 0px auto;
+  border-radius: 3px;
+  padding: 2px 8px;
+  background-color: hsl(220, 90%, 56%);
+  color: white;
+}
+
+/* změna stylu odkazů */
+
+a {
+  color: unset;
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+a:hover {
+  font-weight: bolder;
+  color: hsl(220, 90%, 56%);
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+/* stejná výška všech karet článk */
+.card {
+  min-height: 450px;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+/* šedé pohybující se pozadí v některých sekcích */
+
+#matous-burysek,
+#ucetni-software,
+#clanek,
+#kontakt {
+  background-image: url("/assets/images/grey-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* změna tabulky */
+table,
+td {
+  padding-left: 0px !important;
+  border-left: 0px;
+  border: none;
+}
+
+/* kontaktní okno - nevyužívá Bootstrap */
+
+#window-contact {
+  display: none;
+  position: fixed;
+  top: 15%;
+  left: 20%;
+  width: 60%;
+  background-color: hsl(220, 90%, 56%);
+  border-radius: 15px;
+  box-shadow: 0 0 10px black;
+  color: white;
+}
+
+#close-button {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: xx-large;
+  color: black;
+  /* font-weight: bold; */
+  cursor: pointer;
+}
+
+#close-button:hover {
+  color: white;
+  font-weight: bold;
+}
+
+/* CSS v mobilní verzi ??? window contact musí mít jiné rozměry */
+@media only screen and (max-width: 800px) {
+  #window-contact {
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: auto;
+    right: auto;
+    width: 90%;
+    background-color: hsl(220, 90%, 56%);
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+    color: white;
   }
-} */
+}
