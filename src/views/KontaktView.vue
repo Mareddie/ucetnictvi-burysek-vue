@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Kontakt from '../components/Kontakt.vue'
-import Kontaktni_formular from '@/components/Kontaktni_formular.vue';
+import Kontakt from '../components/Sekce_Kontakt.vue'
+import Kontaktni_formular from '@/components/Sekce_Kontaktni_formular.vue';
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Tlacitko from '../components/Tlacitko.vue'
+import Tlacitko from '../components/Sekce_Tlacitko.vue'
 </script>
 
 <template>
