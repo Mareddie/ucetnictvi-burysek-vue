@@ -1,20 +1,15 @@
 <script lang="ts">
 export default {
-    data() {
-        return {
-            isOpen: true
-        }
-    },
     methods: {
         closeContactBox() {
-            this.isOpen = false;
+            this.$emit("closeContactBoxEvent");
         }
     }
 }
 </script>
 
 <template>
-    <div v-if="isOpen" id="window-contact" class="container p-3 p-md-5">
+    <div id="window-contact" class="container p-3 p-md-5">
         <h2 class="text-center">Máte zájem o mé služby?</h2>
         <p class="text-center">Vyplňte své kontaktní údaje a v nejbližší době se Vám ozvu. Zjistíme, jestli bychom spolu
             mohli spolupracovat.</p>

@@ -11,7 +11,7 @@ export default {
 <template>
     <section id="poptavka" class="row bg-light py-5">
         <div class="d-grid gap-2 col-8 col-md-5 mx-auto">
-            <button class="btn btn-primary btn-lg text-uppercase fw-bold" onclick="openContactBox()">
+            <button class="btn btn-primary btn-lg text-uppercase fw-bold" @click="openContactBox">
                 <h3 class="pt-2">Nezávazně poptat účetní služby</h3>
             </button>
         </div>
