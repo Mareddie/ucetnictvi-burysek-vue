@@ -32,16 +32,6 @@ h5 {
   font-weight: normal;
 }
 
-/* modré zbýraznění některých slov */
-
-.word-background {
-  margin: 0px auto 0px auto;
-  border-radius: 3px;
-  padding: 2px 8px;
-  background-color: hsl(220, 90%, 56%);
-  color: white;
-}
-
 /* změna stylu odkazů */
 
 a {
@@ -57,6 +47,15 @@ a:hover {
 /* stejná výška všech karet článk */
 .card {
   min-height: 450px;
+}
+
+/* modré zbýraznění některých slov */
+.word-background {
+  margin: 0px auto 0px auto;
+  border-radius: 3px;
+  padding: 2px 8px;
+  background-color: hsl(220, 90%, 56%);
+  color: white;
 }
 
 /* šedé pohybující se pozadí v některých sekcích */
