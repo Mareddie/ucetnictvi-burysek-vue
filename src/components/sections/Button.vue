@@ -1,3 +1,13 @@
+<script lang="ts">
+export default {
+    methods: {
+        openContactBox() {
+            this.$emit('openContactBoxEvent');
+        }
+    }
+}
+</script>
+
 <template>
     <section id="poptavka" class="row bg-light py-5">
         <div class="d-grid gap-2 col-8 col-md-5 mx-auto">

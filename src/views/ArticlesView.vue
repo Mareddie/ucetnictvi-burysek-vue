@@ -2,6 +2,17 @@
 import Button from '../components/sections/Button.vue'
 import Article from '../components/elements/Article.vue'
 import Articles from '../components/sections/Articles.vue'
+import ContactPopUp from '../components/popup/ContactPopUp.vue'
+</script>
+
+<script lang="ts">
+export default {
+    data() {
+        return {
+            isContactPopupOpen: false
+        }
+    }
+}
 </script>
 
 <template>
@@ -10,6 +21,7 @@ import Articles from '../components/sections/Articles.vue'
             annotation="" text=""></Article>
         <Button></Button>
         <Articles></Articles>
+        <ContactPopUp v-if="isContactPopupOpen"></ContactPopUp>
     </main>
 </template>
 

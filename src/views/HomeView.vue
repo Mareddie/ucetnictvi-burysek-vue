@@ -4,6 +4,17 @@ import Services from '../components/sections/Services.vue'
 import AboutMe from '../components/sections/AboutMe.vue'
 import Button from '../components/sections/Button.vue'
 import Software from '../components/sections/Software.vue'
+import ContactPopUp from '../components/popup/ContactPopUp.vue'
+</script>
+
+<script lang="ts">
+export default {
+  data() {
+    return {
+      isContactPopupOpen: false
+    }
+  }
+}
 </script>
 
 <template>
@@ -13,5 +24,6 @@ import Software from '../components/sections/Software.vue'
     <AboutMe></AboutMe>
     <Button></Button>
     <Software></Software>
+    <ContactPopUp v-if="isContactPopupOpen"></ContactPopUp>
   </main>
 </template>
