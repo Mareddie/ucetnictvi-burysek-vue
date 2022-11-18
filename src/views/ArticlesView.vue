@@ -32,7 +32,3 @@ export default {
         <ContactPopUp v-if="isContactPopupOpen" @closeContactBoxEvent="closeContactPopup"></ContactPopUp>
     </main>
 </template>
-
-<style>
-
-</style>
