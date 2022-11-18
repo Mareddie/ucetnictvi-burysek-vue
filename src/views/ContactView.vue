@@ -9,7 +9,3 @@ import ContactForm from '@/components/sections/ContactForm.vue'
     <ContactForm></ContactForm>
   </main>
 </template>
-
-<style>
-
-</style>
