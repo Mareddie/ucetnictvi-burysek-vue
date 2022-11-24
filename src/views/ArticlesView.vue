@@ -12,14 +12,6 @@ export default {
             isContactPopupOpen: false
         }
     },
-    methods: {
-        openContactPopup() {
-            this.isContactPopupOpen = true;
-        },
-        closeContactPopup() {
-            this.isContactPopupOpen = false;
-        }
-    }
 }
 </script>
 
@@ -27,8 +19,8 @@ export default {
     <main>
         <Article id="1" name="Název článku" image="https://picsum.photos/id/264//100/150" date="29. srpen 2022"
             annotation="" text=""></Article>
-        <Button @openContactBoxEvent="openContactPopup"></Button>
+        <Button @openContactBoxEvent="isContactPopupOpen = true"></Button>
         <Articles></Articles>
-        <ContactPopUp v-if="isContactPopupOpen" @closeContactBoxEvent="closeContactPopup"></ContactPopUp>
+        <ContactPopUp :isOpen="isContactPopupOpen" @closeContactBoxEvent="isContactPopupOpen = false"></ContactPopUp>
     </main>
 </template>

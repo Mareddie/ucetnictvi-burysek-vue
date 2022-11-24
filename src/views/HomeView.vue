@@ -14,24 +14,16 @@ export default {
       isContactPopupOpen: false
     }
   },
-  methods: {
-    openContactPopup() {
-      this.isContactPopupOpen = true;
-    },
-    closeContactPopup() {
-      this.isContactPopupOpen = false;
-    }
-  }
 }
 </script>
 
 <template>
   <main>
-    <Jumbotron @openContactBoxEvent="openContactPopup"></Jumbotron>
+    <Jumbotron @openContactBoxEvent="isContactPopupOpen = true"></Jumbotron>
     <Services></Services>
     <AboutMe></AboutMe>
-    <Button @openContactBoxEvent="openContactPopup"></Button>
+    <Button @openContactBoxEvent="isContactPopupOpen = true"></Button>
     <Software></Software>
-    <ContactPopUp v-if="isContactPopupOpen" @closeContactBoxEvent="closeContactPopup"></ContactPopUp>
+    <ContactPopUp :isOpen="isContactPopupOpen" @closeContactBoxEvent="isContactPopupOpen = false"></ContactPopUp>
   </main>
 </template>

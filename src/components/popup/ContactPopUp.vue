@@ -4,12 +4,18 @@ export default {
         closeContactBox() {
             this.$emit("closeContactBoxEvent");
         }
+    },
+    props: {
+        isOpen: {
+            type: Boolean,
+            default: false
+        }
     }
 }
 </script>
 
 <template>
-    <div id="window-contact" class="container p-3 p-md-5">
+    <div id="window-contact" class="container p-3 p-md-5" v-if="isOpen">
         <h2 class="text-center">Máte zájem o mé služby?</h2>
         <p class="text-center">Vyplňte své kontaktní údaje a v nejbližší době se Vám ozvu. Zjistíme, jestli bychom spolu
             mohli spolupracovat.</p>
