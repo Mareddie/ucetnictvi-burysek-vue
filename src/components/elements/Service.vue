@@ -1,10 +1,10 @@
 <script setup lang="ts">
 defineProps<{
+    id: string,
     name: string,
     subtitle: string,
     description: string,
-    icon: string,
-    id: string
+    icon: string
 }>()
 </script>
 

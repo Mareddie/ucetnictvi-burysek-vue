@@ -32,16 +32,6 @@ h5 {
   font-weight: normal;
 }
 
-/* modré zbýraznění některých slov */
-
-.word-background {
-  margin: 0px auto 0px auto;
-  border-radius: 3px;
-  padding: 2px 8px;
-  background-color: hsl(220, 90%, 56%);
-  color: white;
-}
-
 /* změna stylu odkazů */
 
 a {
@@ -57,6 +47,15 @@ a:hover {
 /* stejná výška všech karet článk */
 .card {
   min-height: 450px;
+}
+
+/* modré zbýraznění některých slov */
+.word-background {
+  margin: 0px auto 0px auto;
+  border-radius: 3px;
+  padding: 2px 8px;
+  background-color: hsl(220, 90%, 56%);
+  color: white;
 }
 
 /* šedé pohybující se pozadí v některých sekcích */
@@ -78,35 +77,6 @@ td {
   padding-left: 0px !important;
   border-left: 0px;
   border: none;
-}
-
-/* kontaktní okno - nevyužívá Bootstrap */
-
-#window-contact {
-  display: none;
-  position: fixed;
-  top: 15%;
-  left: 20%;
-  width: 60%;
-  background-color: hsl(220, 90%, 56%);
-  border-radius: 15px;
-  box-shadow: 0 0 10px black;
-  color: white;
-}
-
-#close-button {
-  position: absolute;
-  top: 5px;
-  right: 15px;
-  font-size: xx-large;
-  color: black;
-  /* font-weight: bold; */
-  cursor: pointer;
-}
-
-#close-button:hover {
-  color: white;
-  font-weight: bold;
 }
 
 /* CSS v mobilní verzi ??? window contact musí mít jiné rozměry */
